@@ -19,8 +19,8 @@ export class EmployeeStore {
         if (this.employess.length > 0) {
             return
         }
-        const { data } = await loadEmployees();
-        this.setLoadedEmployees(data);
+        const { data: { data: employeeList } }: { data: { data: Employee[] } } = await loadEmployees();
+        this.setLoadedEmployees(employeeList);
     }
 
 

@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Firstly you need to clone project from
 
-"git clone https://github.com/unal719/advertising-management.git"
+run in console git clone https://github.com/unal719/advertising-management.git
 
 ## Npm Install
 

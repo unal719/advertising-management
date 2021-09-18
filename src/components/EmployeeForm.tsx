@@ -119,7 +119,8 @@ const EmployeeForm: FunctionComponent<EmployeeFormProps> = ({ employee, formType
 
           <Form.Item label="Publisher" name="publisherId">
             <Select >
-              {publisherStore.publishers.map((publisher: Publisher) => {
+              <Select.Option key="-1" value="undefined" > &nbsp; </Select.Option>
+              {publisherStore.publishers.map((publisher: Publisher, index: number) => {
                 return <Select.Option key={publisher.id} value={publisher.id}> {publisher.name} </Select.Option>
               })}
             </Select>

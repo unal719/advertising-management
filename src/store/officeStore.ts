@@ -21,8 +21,8 @@ export class OfficeStore {
         if (this.offices.length > 0) {
             return
         }
-        const { data } = await loadOffices();
-        this.setLoadedOffices(data)
+        const { data: { data: officeList } }: { data: { data: Office[] } } = await loadOffices();
+        this.setLoadedOffices(officeList)
     }
 
     get office() {

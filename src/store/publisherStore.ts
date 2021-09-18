@@ -20,8 +20,8 @@ export class PublisherStore {
         if (this.publishers.length > 0) {
             return
         }
-        const { data } = await loadPublishers();
-        this.setLoadedPublishers(data)
+        const { data: { data: publisherList } }: { data: { data: Publisher[] } } = await loadPublishers();
+        this.setLoadedPublishers(publisherList)
     }
 
     get publisher() {
