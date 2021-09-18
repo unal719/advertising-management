@@ -1,0 +1,24 @@
+@import "~antd/dist/antd.css";
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-wrapper {
+  max-width: 1180px;
+  margin: 90px auto;
+
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
